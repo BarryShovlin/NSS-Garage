@@ -1,9 +1,10 @@
-public class Ram : Vehicle
+public class Ram : Vehicle, IGassinUp
 {
     public double FuelCapacity { get; set; }
+    public int CurrentTankPercentage { get; set; } = 13;
 
     public void RefuelTank()
     {
-        // method definition omitted
+        CurrentTankPercentage = 100;
     }
 }

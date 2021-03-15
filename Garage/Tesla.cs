@@ -1,13 +1,14 @@
 
 using System;
 
-public class Tesla : Vehicle
+public class Tesla : Vehicle, ICharging
 {
     public double BatteryKWh { get; set; }
+    public int CurrentChargePercentage { get; set; } = 20;
 
     public void ChargeBattery()
     {
-        // method definition omitted
+        CurrentChargePercentage = 100;
     }
 
     public override void Drive()
