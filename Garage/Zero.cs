@@ -6,7 +6,13 @@ public class Zero : Vehicle, ICharging
 
     public void ChargeBattery()
     {
+        Console.Write($"The {this.GetType().Name}'s battery is at {CurrentChargePercentage}%.");
+        Console.WriteLine("");
+        Console.WriteLine("Recharging.....");
         CurrentChargePercentage = 100;
+        Console.WriteLine($"The {this.GetType().Name}'s battery is now {CurrentChargePercentage}%.");
+        Console.WriteLine("---------------------------------");
+        Console.WriteLine("");
     }
 
     public override void Drive()
