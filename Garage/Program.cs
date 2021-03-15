@@ -16,10 +16,10 @@ namespace Garage
               };
 
             Console.WriteLine("Electric Vehicles");
-            foreach (ICharging ev in electricVehicles)
-            {
-                Console.WriteLine($"{ev.CurrentChargePercentage}");
-            }
+            // foreach (ICharging ev in electricVehicles)
+            // {
+            //     Console.WriteLine($"{ev.CurrentChargePercentage}");
+            // }
 
             foreach (ICharging ev in electricVehicles)
             {
@@ -27,10 +27,10 @@ namespace Garage
                 ev.ChargeBattery();
             }
 
-            foreach (ICharging ev in electricVehicles)
-            {
-                Console.WriteLine($"{ev.CurrentChargePercentage}");
-            }
+            // foreach (ICharging ev in electricVehicles)
+            // {
+            //     Console.WriteLine($"{ev.CurrentChargePercentage}");
+            // }
 
             /***********************************************/
 
@@ -42,10 +42,10 @@ namespace Garage
               };
 
             Console.WriteLine("Gas Vehicles");
-            foreach (IGassinUp gv in gasVehicles)
-            {
-                Console.WriteLine($"{gv.CurrentTankPercentage}");
-            }
+            // foreach (IGassinUp gv in gasVehicles)
+            // {
+            //     Console.WriteLine($"{gv.CurrentTankPercentage}");
+            // }
 
             foreach (IGassinUp gv in gasVehicles)
             {
@@ -53,10 +53,10 @@ namespace Garage
                 gv.RefuelTank();
             }
 
-            foreach (IGassinUp gv in gasVehicles)
-            {
-                Console.WriteLine($"{gv.CurrentTankPercentage}");
-            }
+            // foreach (IGassinUp gv in gasVehicles)
+            // {
+            //     Console.WriteLine($"{gv.CurrentTankPercentage}");
+            // }
         }
     }
 }
